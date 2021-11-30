@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+:root {
+  --black: #363636;
+  --white: white;
+  --limegreen: #95CB40;
+  --lightblue: #8ECDE5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Sandbox {
+  width: 200vw;
+  height: 200vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.LongCardBG {
+  background-color: var(--white);
+  border: 2px solid black;
+  border-radius: 5px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MediumTitle {
+  font-size: 24px;
+  color: var(--black);
+  font-weight: bold;
+  margin: 0;
+}
+
+.SmallTitle {
+  font-size: 18px;
+  color: var(--black);
+  font-weight: bold;
+  margin: 0;
+}
+
+.BasicButton {
+  display: inline;
+  color: var(--white);
+  font-weight: bold;
+  background-color: #363636;
+  border: solid 2px black;
+  border-radius: 5px;
+  min-width: 100px;
+  font-size: 18px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.SmallText {
+  font-size: 12px;
+  color: var(--black);
+}
+
+.MediumText {
+  font-size: 18px;
+  color: var(--black);
+  margin: 0;
+}
+
+.BoldMod {
+  font-weight: bold;
+}
+container {
+  background: rgb(194, 194, 194);
+}
+
+.CanHelpCard {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  will-change: transform;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffffaa;
+  background-color: var(--limegreen);
 }
 
-.App-link {
-  color: #61dafb;
+.NeedHelpCard {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  will-change: transform;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffffaa;
+  background-color: var(--lightblue);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Popup {
+  width: 40%;
+  height: 45%;
+  border: 1px solid black;
+
+  /* Centering #main on the screen */
+  position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.PopupContent {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.BasicInput {
+  text-align: center;
+  width: 100%;
+  text-align: left;
+  border-radius: 3px;
+}
+
+.BasicInput:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.CautionButton {
+  background-color: #f1f1f1 !important;
+  color: black !important;
+  border-color: #ffffff;
 }
